@@ -65,18 +65,51 @@ mon2 = Monstros("Splash", "agua", 10, 5 , 5000 , 2 , 5)
 
 mon3 = Monstros("Igni", "fogo", 10, 5 , 5000 , 2 , 5)
 
-mon3 = Monstros("Rock", "terra", 10, 5 , 5000 , 2 , 5)
+mon4 = Monstros("Rock", "terra", 10, 5 , 5000 , 2 , 5)
 
 Torneio.duelo(mon1,mon2)
+Torneio.duelo(mon3,mon4)
 
 
 
 if (mon1.tposition == 2):
-    Torneio.duelo(mon1,mon3)
 
+    if (mon2.tposition == 2):
+        Torneio.duelo(mon1,mon2)
+    if (mon3.tposition == 2):
+        Torneio.duelo(mon1,mon3)
+    if (mon4.tposition == 2):
+        Torneio.duelo(mon1,mon4)
+                        
+    
 if (mon2.tposition == 2):
-    Torneio.duelo(mon2,mon3)
+    
+    if (mon1.tposition == 2):
+        Torneio.duelo(mon1,mon2)
+    if (mon3.tposition == 2):
+        Torneio.duelo(mon2,mon3)
+    if (mon4.tposition == 2):
+        Torneio.duelo(mon2,mon4)
 
+
+if (mon3.tposition == 2):
+    
+    if (mon2.tposition == 2):
+        Torneio.duelo(mon3,mon2)
+    if (mon1.tposition == 2):
+        Torneio.duelo(mon1,mon3)
+    if (mon4.tposition == 2):
+        Torneio.duelo(mon3,mon4)
+
+
+if (mon4.tposition == 2):
+    
+    if (mon2.tposition == 2):
+        Torneio.duelo(mon4,mon2)
+    if (mon3.tposition == 2):
+        Torneio.duelo(mon4,mon3)
+    if (mon1.tposition == 2):
+        Torneio.duelo(mon1,mon4)
 
 
 
