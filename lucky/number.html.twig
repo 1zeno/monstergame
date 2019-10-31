@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+
+<style>
+.butaodoido{
+margin: 150px auto;
+max-width: 1050px;
+}
+</style>
+{% endblock %}
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://www.youtube.com/watch?v=c0RANgSXulY">Nego Bam</a>
+</nav>
+<div class="butaodoido">
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="" 
+data-content="Seu numero da sorte e {{number}}" data-original-title="Sorte">clique aqui para ver seu numero da sorte</button>   
+</div>
+        
+        
+        
+        {% endblock %}
